@@ -1,4 +1,4 @@
-package com.example.singleinstance;
+package com.example.patterndesign.singleinstance;
 
 public class LazyModel {
     private String name;
@@ -9,7 +9,11 @@ public class LazyModel {
 
     public static LazyModel getInstance(){
         if(lazyModel == null ){
-            lazyModel = new LazyModel("zhangsan");
+            synchronized (LazyModel.class){
+                if(lazyModel == null ){
+                    lazyModel = new LazyModel("zhangsan");
+                }
+            }
         }
         return lazyModel;
     }

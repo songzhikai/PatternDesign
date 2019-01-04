@@ -1,4 +1,4 @@
-package com.example.templatemethod;
+package com.example.patterndesign.templatemethod;
 
 public class Main {
     public static void main(String[] args) {

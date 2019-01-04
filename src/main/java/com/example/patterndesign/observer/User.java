@@ -1,4 +1,4 @@
-package com.example.observer;
+package com.example.patterndesign.observer;
 
 public class User implements ISubscriber{
 

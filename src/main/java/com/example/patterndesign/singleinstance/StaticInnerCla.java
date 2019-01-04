@@ -1,4 +1,4 @@
-package com.example.singleinstance;
+package com.example.patterndesign.singleinstance;
 
 /**
  * 静态内部类

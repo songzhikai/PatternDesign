@@ -1,4 +1,4 @@
-package com.example.observer;
+package com.example.patterndesign.observer;
 
 public interface IPublish {
     void addSubObserver(ISubscriber subscriber);
