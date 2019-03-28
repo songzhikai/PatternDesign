@@ -6,9 +6,9 @@ public class Main {
         ISubscriber user1 = new User("zhangsan");
         ISubscriber user2 = new User("wangwu");
         IPublish publish = new PublishSubject();
-        publish.addSubObserver(user);
-        publish.addSubObserver(user1);
-        publish.addSubObserver(user2);
-        publish.notifySubObserver("祖国海峡两岸必须统一");
+        publish.addObserver(user);
+        publish.addObserver(user1);
+        publish.addObserver(user2);
+        publish.notifyObserver("祖国海峡两岸必须统一");
     }
 }

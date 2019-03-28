@@ -9,17 +9,17 @@ public class PublishSubject implements IPublish{
         list = new ArrayList<ISubscriber>();
     }
     @Override
-    public void addSubObserver(ISubscriber subscriber) {
+    public void addObserver(ISubscriber subscriber) {
         this.list.add(subscriber);
     }
 
     @Override
-    public void deleteSubObserver(ISubscriber subscriber) {
+    public void deleteObserver(ISubscriber subscriber) {
         this.list.remove(subscriber);
     }
 
     @Override
-    public void notifySubObserver(String notifyMsg) {
+    public void notifyObserver(String notifyMsg) {
         for(ISubscriber subscriber : list){
             subscriber.update(notifyMsg);
         }
