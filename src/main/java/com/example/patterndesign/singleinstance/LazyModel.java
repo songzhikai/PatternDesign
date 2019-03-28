@@ -19,6 +19,7 @@ public class LazyModel {
     }
 
     public static void main(String[] args) {
-        LazyModel.getInstance();
+        LazyModel instance = LazyModel.getInstance();
+        System.out.println(instance.name);
     }
 }
